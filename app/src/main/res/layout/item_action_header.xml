@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".recycler.viewholders.HeaderViewHolder">
+
+    <data>
+
+        <variable
+            name="header"
+            type="org.hfathi.bugloos.music.Header" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_header_dividers">
+
+        <TextView
+            android:id="@+id/header_title"
+            style="@style/HeaderText"
+            android:text="@{header.name}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Songs" />
+
+        <ImageButton
+            android:id="@+id/header_button"
+            style="@style/HeaderAction"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/header_title"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_clear" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

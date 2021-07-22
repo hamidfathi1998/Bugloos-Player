@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing Namespace | Dimens for padding/margin attributes -->
+    <dimen name="spacing_micro">2dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_mid_large">24dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_mid_huge">48dp</dimen>
+    <dimen name="spacing_insane">128dp</dimen>
+
+    <!-- Height Namespace | Height for UI elements -->
+    <dimen name="height_compact_progress">2dp</dimen>
+
+    <!-- Width Namespace | Width for UI elements -->
+    <dimen name="width_track_number">32dp</dimen>
+    <dimen name="width_play_stroke">1dp</dimen>
+    <dimen name="width_fast_scroll">20dp</dimen>
+
+    <!-- Size Namespace | Width & Heights for UI elements -->
+    <dimen name="size_error_icon">48dp</dimen>
+
+    <dimen name="size_small_unb_ripple">18dp</dimen>
+    <dimen name="size_unb_ripple">24dp</dimen>
+
+    <dimen name="size_cover_compact">46dp</dimen>
+    <dimen name="size_cover_normal">56dp</dimen>
+    <dimen name="size_cover_large">68dp</dimen>
+    <dimen name="size_cover_detail">260dp</dimen>
+    <dimen name="size_cover_detail_land">130dp</dimen>
+
+    <dimen name="size_play_pause">70dp</dimen>
+    <dimen name="size_play_pause_compact">36dp</dimen>
+    <dimen name="size_scroll_thumb">48dp</dimen>
+    <dimen name="size_clear">32dp</dimen>
+
+    <dimen name="size_app_icon">50dp</dimen>
+
+    <!-- Text Size Namespace | Text Sizes -->
+    <dimen name="text_size_min">10sp</dimen>
+    <dimen name="text_size_increment">1sp</dimen>
+    <dimen name="text_size_track_max">20sp</dimen>
+    <dimen name="text_size_detail_header_max">26sp</dimen>
+    <dimen name="text_size_thumb">18sp</dimen>
+    <dimen name="text_size_header">19sp</dimen>
+    <dimen name="text_size_material_button">16sp</dimen>
+    <dimen name="text_size_toolbar_header">20sp</dimen>
+
+    <!-- Misc -->
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_normal">4dp</dimen>
+    <dimen name="offset_thumb">4dp</dimen>
+</resources>

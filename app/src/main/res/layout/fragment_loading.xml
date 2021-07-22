@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loadingModel"
+            type="org.hfathi.bugloos.loading.LoadingViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_small">
+
+        <ProgressBar
+            android:id="@+id/loading_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:paddingBottom="@dimen/spacing_tiny" />
+
+        <ImageView
+            android:id="@+id/loading_error_icon"
+            android:layout_width="@dimen/size_error_icon"
+            android:layout_height="@dimen/size_error_icon"
+            android:layout_margin="@dimen/spacing_small"
+            android:contentDescription="@string/description_error"
+            android:src="@drawable/ic_error"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/loading_error_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"
+            tools:text="Some kind of error" />
+
+        <Button
+            android:id="@+id/loading_retry_button"
+            style="@style/Widget.Button.Unbounded.Text"
+            android:onClick="@{() -> loadingModel.load(context)}"
+            android:text="@string/label_retry"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/loading_grant_button"
+            style="@style/Widget.Button.Unbounded.Text"
+            android:onClick="@{() -> loadingModel.grant()}"
+            android:text="@string/label_grant"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:layout="@layout/item_header"
+        app:title="@string/setting_ui">
+
+        <org.hfathi.bugloos.settings.ui.IntListPreference
+            app:defaultValue="@integer/theme_auto"
+            app:entries="@array/entires_theme"
+            app:entryValues="@array/values_theme"
+            app:icon="@drawable/ic_day"
+            app:iconSpaceReserved="false"
+            app:key="KEY_THEME2"
+            app:title="@string/setting_theme" />
+
+        <Preference
+            app:allowDividerBelow="false"
+            app:icon="@drawable/ic_accent"
+            app:key="KEY_ACCENT2"
+            app:summary="@string/color_label_blue"
+            app:title="@string/setting_accent" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_BLACK_THEME"
+            app:title="@string/setting_black_mode"
+            app:summary="@string/setting_black_mode_desc"
+            app:allowDividerBelow="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:layout="@layout/item_header"
+        app:title="@string/setting_display">
+
+        <org.hfathi.bugloos.settings.ui.IntListPreference
+            app:defaultValue="@integer/display_artist"
+            app:entries="@array/entries_lib_display"
+            app:entryValues="@array/values_lib_display"
+            app:icon="@drawable/ic_artist"
+            app:key="KEY_LIB_MODE"
+            app:title="@string/setting_lib_display"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_SHOW_COVERS"
+            app:summary="@string/setting_show_covers_desc"
+            app:title="@string/setting_show_covers" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="KEY_SHOW_COVERS"
+            app:iconSpaceReserved="false"
+            app:key="KEY_QUALITY_COVERS"
+            app:summary="@string/setting_quality_covers_desc"
+            app:title="@string/setting_quality_covers" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:dependency="KEY_SHOW_COVERS"
+            app:iconSpaceReserved="false"
+            app:key="KEY_COLOR_NOTIF"
+            app:summary="@string/setting_color_desc"
+            app:title="@string/setting_color_notif" />
+
+        <SwitchPreferenceCompat
+            app:allowDividerBelow="false"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="KEY_ALT_NOTIF_ACTION"
+            app:summaryOff="@string/setting_use_alt_loop"
+            app:summaryOn="@string/setting_use_alt_shuffle"
+            app:title="@string/setting_use_alt_action" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:layout="@layout/item_header"
+        app:title="@string/setting_audio">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_AUDIO_FOCUS"
+            app:summary="@string/setting_audio_focus_desc"
+            app:title="@string/setting_audio_focus" />
+
+        <SwitchPreferenceCompat
+            app:allowDividerBelow="false"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_PLUG_MGT"
+            app:summary="@string/setting_audio_plug_mgt_desc"
+            app:title="@string/setting_audio_plug_mgt" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:layout="@layout/item_header"
+        app:title="@string/setting_behavior">
+
+        <org.hfathi.bugloos.settings.ui.IntListPreference
+            app:defaultValue="@integer/play_mode_songs"
+            app:entries="@array/entries_song_playback_mode"
+            app:entryValues="@array/values_song_playback_mode"
+            app:iconSpaceReserved="false"
+            app:key="KEY_SONG_PLAY_MODE2"
+            app:title="@string/setting_behavior_song_playback_mode"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_KEEP_SHUFFLE"
+            app:summary="@string/setting_behavior_keep_shuffle_desc"
+            app:title="@string/setting_behavior_keep_shuffle" />
+
+        <SwitchPreference
+            app:allowDividerBelow="false"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="KEY_PREV_REWIND"
+            app:summary="@string/setting_behavior_rewind_prev_desc"
+            app:title="@string/setting_behavior_rewind_prev" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:layout="@layout/item_header"
+        app:title="@string/setting_content">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="KEY_SAVE_STATE"
+            app:summary="@string/setting_content_save_desc"
+            app:title="@string/setting_content_save" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="KEY_BLACKLIST"
+            app:summary="@string/setting_content_blacklist_desc"
+            app:title="@string/setting_content_blacklist" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

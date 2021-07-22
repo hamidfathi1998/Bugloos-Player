@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".recycler.viewholders.GenreViewHolder">
+
+    <data>
+
+        <variable
+            name="genre"
+            type="org.hfathi.bugloos.music.Genre" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/ItemSurroundings">
+
+        <ImageView
+            android:id="@+id/genre_image"
+            android:layout_width="@dimen/size_cover_normal"
+            android:layout_height="@dimen/size_cover_normal"
+            android:contentDescription="@{@string/description_genre_image(genre.name)}"
+            app:genreImage="@{genre}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_genre" />
+
+        <TextView
+            android:id="@+id/genre_name"
+            style="@style/ItemText.Primary"
+            android:text="@{genre.resolvedName}"
+            app:layout_constraintBottom_toTopOf="@+id/genre_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/genre_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Genre Name" />
+
+        <TextView
+            android:id="@+id/genre_count"
+            style="@style/ItemText.Secondary"
+            android:text="@{@plurals/format_song_count(genre.songs.size(), genre.songs.size())}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/genre_image"
+            app:layout_constraintTop_toBottomOf="@+id/genre_name"
+            tools:text="40 Songs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

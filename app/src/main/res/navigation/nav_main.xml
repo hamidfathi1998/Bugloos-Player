@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loading_fragment">
+    <fragment
+        android:id="@+id/loading_fragment"
+        android:name="org.hfathi.bugloos.loading.LoadingFragment"
+        android:label="LoadingFragment"
+        tools:layout="@layout/fragment_loading">
+        <action
+            android:id="@+id/action_to_main"
+            app:destination="@id/main_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/loading_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="org.hfathi.bugloos.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_go_to_playback"
+            app:destination="@id/playback_fragment"
+            app:enterAnim="@anim/anim_nav_slide_up"
+            app:exitAnim="@anim/anim_stationary"
+            app:popEnterAnim="@anim/anim_stationary"
+            app:popExitAnim="@anim/anim_nav_slide_down" />
+        <action
+            android:id="@+id/action_show_about"
+            app:destination="@id/about_fragment"
+            app:enterAnim="@anim/anim_nav_slide_up"
+            app:exitAnim="@anim/anim_stationary"
+            app:popEnterAnim="@anim/anim_stationary"
+            app:popExitAnim="@anim/anim_nav_slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/playback_fragment"
+        android:name="org.hfathi.bugloos.playback.PlaybackFragment"
+        android:label="PlaybackFragment"
+        tools:layout="@layout/fragment_playback">
+        <action
+            android:id="@+id/action_show_queue"
+            app:destination="@id/queue_fragment"
+            app:enterAnim="@anim/anim_nav_slide_up"
+            app:exitAnim="@anim/anim_stationary"
+            app:popEnterAnim="@anim/anim_stationary"
+            app:popExitAnim="@anim/anim_nav_slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/queue_fragment"
+        android:name="org.hfathi.bugloos.playback.queue.QueueFragment"
+        android:label="QueueFragment"
+        tools:layout="@layout/fragment_queue" />
+    <fragment
+        android:id="@+id/about_fragment"
+        android:name="org.hfathi.bugloos.settings.AboutFragment"
+        android:label="dialog_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
