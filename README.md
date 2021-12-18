@@ -10,10 +10,7 @@
     </a>
     <img alt="Minimum SDK" src="https://img.shields.io/badge/API-21%2B-32B5ED">
 </p>
-<h4 align="center"><a href="/info/FAQ.md">FAQ</a> / <a href="/info/FORMATS.md">Formats</a> / <a href="/info/LICENSES.md">Licenses</a> / <a href="/.github/CONTRIBUTING.md">Contributing</a></h4>
-<p align="center">
-    <a href="https://f-droid.org/app/hfathi.Bugloos-Player"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" width="170"></a>
-</p>
+
 
 ## About
 
@@ -70,15 +67,4 @@ I primarily built Bugloos-Player for myself, but you can use it too, I guess.
 Bugloos-Player accepts most contributions as long as they follow the [Contribution Guidelines](/.github/CONTRIBUTING.md).
 
 However, feature additions and major UI changes are less likely to be accepted. See [Accepted Additions](/info/ADDITIONS.md) for more information.
-
-## License
-
-[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
-
-Bugloos-Player is Free Software: You can use, study share and improve it at your
-will. Specifically you can redistribute and/or modify it under the terms of the
-[GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
-published by the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-=======
 
