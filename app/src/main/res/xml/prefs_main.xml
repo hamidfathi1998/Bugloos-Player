@@ -52,6 +52,7 @@
 
         <SwitchPreferenceCompat
             app:defaultValue="false"
+            app:isPreferenceVisible="false"
             app:dependency="KEY_SHOW_COVERS"
             app:iconSpaceReserved="false"
             app:key="KEY_QUALITY_COVERS"
@@ -61,6 +62,7 @@
         <SwitchPreferenceCompat
             app:defaultValue="true"
             app:dependency="KEY_SHOW_COVERS"
+            app:isPreferenceVisible="false"
             app:iconSpaceReserved="false"
             app:key="KEY_COLOR_NOTIF"
             app:summary="@string/setting_color_desc"
@@ -78,6 +80,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        app:isPreferenceVisible="false"
         app:layout="@layout/item_header"
         app:title="@string/setting_audio">
 
@@ -122,6 +125,7 @@
             app:allowDividerBelow="false"
             app:defaultValue="true"
             app:iconSpaceReserved="false"
+            app:isPreferenceVisible="false"
             app:key="KEY_PREV_REWIND"
             app:summary="@string/setting_behavior_rewind_prev_desc"
             app:title="@string/setting_behavior_rewind_prev" />
@@ -139,6 +143,7 @@
             app:title="@string/setting_content_save" />
 
         <Preference
+            app:isPreferenceVisible="false"
             app:iconSpaceReserved="false"
             app:key="KEY_BLACKLIST"
             app:summary="@string/setting_content_blacklist_desc"

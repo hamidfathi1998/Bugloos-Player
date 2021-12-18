@@ -93,7 +93,7 @@ class LoadingFragment : Fragment() {
     // --- PERMISSIONS ---
 
     /**
-     * Check if Auxio has the permissions to load music
+     * Check if bugloos_player has the permissions to load music
      */
     private fun hasNoPermissions(): Boolean {
         val needRationale = shouldShowRequestPermissionRationale(

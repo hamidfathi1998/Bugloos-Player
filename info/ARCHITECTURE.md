@@ -1,21 +1,21 @@
 # Architecture
 
-This document is designed to provide a simple overview of Auxio's architecture and where code resides/should reside. It will be updated as aspects about Auxio change.
+This document is designed to provide a simple overview of Bugloos-Player architecture and where code resides/should reside. It will be updated as aspects about bugloos_player change.
 
 #### Code structure
 
-Auxio's codebase is mostly centered around 4 different types of code.
+Bugloos-Player codebase is mostly centered around 4 different types of code.
 
 - UIs: Fragments, RecyclerView items, and Activities are part of this class. All of them should have little data logic in them and should primarily focus on displaying information in their UIs.
 - ViewModels: These usually contain data and values that a UI can display, along with doing data processing. The data often takes the form of `MutableLiveData` or `LiveData`, which can be observed.
-- Shared Objects: These are the fundamental building blocks of Auxio, and exist at the process level. These are usually retrieved using `getInstance` or a similar function. Shared Objects should be avoided in UIs, as their volatility can cause problems. Its better to use a ViewModel and their exposed data instead.
+- Shared Objects: These are the fundamental building blocks of bugloos_player, and exist at the process level. These are usually retrieved using `getInstance` or a similar function. Shared Objects should be avoided in UIs, as their volatility can cause problems. Its better to use a ViewModel and their exposed data instead.
 - Utilities: These are largely found in the `.ui`, `.music`, and `.coil` packages, taking the form of standalone or extension functions that can be used anywhere.
 
 Ideally, UIs should only be talking to ViewModels, ViewModels should only be talking to the Shared Objects, and Shared Objects should only be talking to other shared objects. All objects can use the utility functions.
 
 #### UI Structure
 
-Auxio only has one activity, that being `MainActivity`. When adding a new UI, it should be added as a `Fragment` or a `RecyclerView` item depending on the situation. 
+bugloos_player only has one activity, that being `MainActivity`. When adding a new UI, it should be added as a `Fragment` or a `RecyclerView` item depending on the situation.
 
 Databinding should *always* be used instead of `findViewById`. Use `by memberBinding` if the binding needs to be a member variable in order to avoid memory leaks.
 
@@ -31,7 +31,7 @@ Data is often bound using Binding Adapters, which are XML attributes assigned in
 
 #### Integers
 
-Integer representations of data/ui elements are used heavily in Auxio. 
+Integer representations of data/ui elements are used heavily in bugloos_player.
 To prevent any strange bugs, all integer representations must be unique. A table of all current integers used are shown below:
 
 ```
@@ -55,8 +55,8 @@ To prevent any strange bugs, all integer representations must be unique. A table
 0xA00D | GenreHeaderViewHolder
 0xA00E | GenreSongViewHolder
 
-0xA0A0 | Auxio notification code
-0xA0C0 | Auxio request code
+0xA0A0 | bugloos_player notification code
+0xA0C0 | bugloos_player request code
 
 0xA1XX | Data Integer Space [Stored for IO efficency]
 
@@ -84,12 +84,12 @@ To prevent any strange bugs, all integer representations must be unique. A table
 
 #### Package structure overview
 
-Auxio's package structure is mostly based around the features, and then any sub-features or components involved with that. There are some shared packages however. A diagram of the package structure is shown below:
+Bugloos-Player package structure is mostly based around the features, and then any sub-features or components involved with that. There are some shared packages however. A diagram of the package structure is shown below:
 
 ```
-hfathi.auxio  # Main UI's and logging utilities
+hfathi.bugloos_player  # Main UI's and logging utilities
 ├──.coil           # Fetchers and utilities for Coil, contains binding adapters than be used in the user interface.
-├──.database       # Databases and their items for Auxio
+├──.database       # Databases and their items for bugloos_player
 ├──.detail         # UIs for more album/artist/genre details
 │  └──.adapters    # RecyclerView adapters for the detail UIs, which display the header information and items
 ├──.library        # Library UI
@@ -112,22 +112,22 @@ hfathi.auxio  # Main UI's and logging utilities
 
 #### `.coil`
 
-[Coil](https://github.com/coil-kt/coil) is the image loader used by Auxio. All image loading is done through these four functions/binding adapters:
+[Coil](https://github.com/coil-kt/coil) is the image loader used by bugloos_player. All image loading is done through these four functions/binding adapters:
 
 - `app:albumArt`: Binding Adapter that will load the cover art for a song or album
 - `app:artistImage`: Binding Adapter that will load the artist image
 - `app:genreImage`: Binding Adapter that will load the genre image
 - `loadBitmap`: Function that will take a song and return a bitmap, this should not be used in anything UI related, that is what the binding adapters above are for.
 
-This should be enough to cover most use cases in Auxio. There are also fetchers for artist/genre images and album covers, but these are not used outside of the module.
+This should be enough to cover most use cases in bugloos_player. There are also fetchers for artist/genre images and album covers, but these are not used outside of the module.
 
 #### `.database`
 
-This is the general repository for databases in Auxio, along with their entities. All databases use `SQLiteOpenHelper`, with all database entities having their keys in a `companion object`.
+This is the general repository for databases in bugloos_player, along with their entities. All databases use `SQLiteOpenHelper`, with all database entities having their keys in a `companion object`.
 
 #### `.detail`
 
-Contains all the detail UIs for some data types in Auxio. All detail user interfaces share the same base layout (A Single RecyclerView) and only change the adapter/data being used. The adapters display both the header with information and the child items of the item itself, usually with a data list similar to this:
+Contains all the detail UIs for some data types in bugloos_player. All detail user interfaces share the same base layout (A Single RecyclerView) and only change the adapter/data being used. The adapters display both the header with information and the child items of the item itself, usually with a data list similar to this:
 
 `Item being displayed | Child Item | Child Item | Child Item...`
 
@@ -135,7 +135,7 @@ Contains all the detail UIs for some data types in Auxio. All detail user interf
 
 #### `.library`
 
-The UI and adapters for the library view in Auxio, `LibraryViewModel` handles the sorting and which data to display in the fragment, while `LibraryFragment` and `LibraryAdapter` displays the data.
+The UI and adapters for the library view in bugloos_player, `LibraryViewModel` handles the sorting and which data to display in the fragment, while `LibraryFragment` and `LibraryAdapter` displays the data.
 
 #### `.music`
 
@@ -152,7 +152,7 @@ All music objects inherit `BaseModel`, which guarantees that all music has both 
 
 #### `.playback`
 
-Auxio's playback system is somewhat unorthodox, as it avoids a lot of the built-in android code in favor of a more understandable and controllable system. Its structured around a couple of objects, the connections being highlighted in this diagram.
+Bugloos-Player playback system is somewhat unorthodox, as it avoids a lot of the built-in android code in favor of a more understandable and controllable system. Its structured around a couple of objects, the connections being highlighted in this diagram.
 
 ```
     Playback UIs    Queue UI    PlaybackService
@@ -178,7 +178,7 @@ The settings system is primarily based off of `SettingsManager`, a wrapper aroun
 
 #### `.search`
 
-Package for Auxio's search functionality, `SearchViewHolder` handles the data results and filtering while `SearchFragment`/`SearchAdapter` handles the display of the results and user input.
+Package for Bugloos-Player search functionality, `SearchViewHolder` handles the data results and filtering while `SearchFragment`/`SearchAdapter` handles the display of the results and user input.
 
 #### `.songs`
 

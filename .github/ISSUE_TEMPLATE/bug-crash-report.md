@@ -1,6 +1,6 @@
 ---
 name: Bug/Crash Report
-about: Report an issue with Auxio
+about: Report an issue with Bugloos-Player
 title: ''
 labels: bug
 assignees: ''
@@ -29,4 +29,4 @@ assignees: ''
 
 #### Due Diligence:
 
-- [ ] I have read the [Contribution Guidelines](https://github.com/OxygenCobalt/Auxio/blob/dev/.github/CONTRIBUTING.md).
+- [ ] I have read the [Contribution Guidelines](https://github.com/hamidfathi1998/Bugloos-Player/blob/dev/.github/CONTRIBUTING.md).

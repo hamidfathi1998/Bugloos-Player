@@ -168,7 +168,7 @@ class PlaybackNotification private constructor(
     }
 
     companion object {
-        const val CHANNEL_ID = "CHANNEL_AUXIO_PLAYBACK"
+        const val CHANNEL_ID = "CHANNEL_BUGLOOS_PLAYER_PLAYBACK"
         const val NOTIFICATION_ID = 0xA0A0
         const val REQUEST_CODE = 0xA0C0
 

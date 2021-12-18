@@ -69,7 +69,7 @@ class BlacklistDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, n
 
     companion object {
         const val DB_VERSION = 1
-        const val DB_NAME = "auxio_blacklist_database.db"
+        const val DB_NAME = "bugloos_Player_blacklist_database.db"
 
         const val TABLE_NAME = "blacklist_dirs_table"
         const val COLUMN_PATH = "COLUMN_PATH"

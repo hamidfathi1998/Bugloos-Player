@@ -137,7 +137,7 @@ private fun SharedPreferences.handleOldDisplayMode(key: String): DisplayMode? {
 }
 
 /**
- * Cache of the old keys used in Auxio.
+ * Cache of the old keys used in bugloos_player.
  */
 private object OldKeys {
     const val KEY_ACCENT = "KEY_ACCENT"
@@ -148,7 +148,7 @@ private object OldKeys {
 }
 
 /**
- * Static cache of old string values used in Auxio
+ * Static cache of old string values used in bugloos_player
  */
 private object EntryValues {
     const val THEME_AUTO = "AUTO"

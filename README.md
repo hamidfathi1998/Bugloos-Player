@@ -1,8 +1,8 @@
 <p align="center"><img src="fastlane/metadata/android/en-US/images/icon.png" width="150"></p>
-<h1 align="center"><b>Auxio</b></h1>
+<h1 align="center"><b>Bugloos-Player</b></h1>
 <h4 align="center">A simple, rational music player for android.</h4>
 <p align="center">
-    <a href="https://github.com/oxygencobalt/Auxio/releases/">
+    <a href="https://github.com/hamidfathi1998/Bugloos-Player/releases/">
         <img alt="GitHub release" src="https://img.shields.io/static/v1?label=Tag&message=v1.4.0&color=0D5AF5">
     </a>
     <a href="https://www.gnu.org/licenses/gpl-3.0">
@@ -12,16 +12,16 @@
 </p>
 <h4 align="center"><a href="/info/FAQ.md">FAQ</a> / <a href="/info/FORMATS.md">Formats</a> / <a href="/info/LICENSES.md">Licenses</a> / <a href="/.github/CONTRIBUTING.md">Contributing</a></h4>
 <p align="center">
-    <a href="https://f-droid.org/app/hfathi.auxio"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" width="170"></a>
+    <a href="https://f-droid.org/app/hfathi.Bugloos-Player"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" width="170"></a>
 </p>
 
 ## About
 
-Auxio is a local music player with a fast, reliable UI/UX without the many useless features present in other music players. Built off of <a href="https://exoplayer.dev/">Exoplayer</a>, Auxio has a much better listening experience compared to other apps that use the native MediaPlayer API. In short, **It plays music.**
+Bugloos-Player is a local music player with a fast, reliable UI/UX without the many useless features present in other music players. Built off of <a href="https://exoplayer.dev/">Exoplayer</a>, Bugloos-Player has a much better listening experience compared to other apps that use the native MediaPlayer API. In short, **It plays music.**
 
-I primarily built Auxio for myself, but you can use it too, I guess.
+I primarily built Bugloos-Player for myself, but you can use it too, I guess.
 
-#### Note: Auxio is in a point that I am largely satisfied with. The app is still maintained, but feature additions will be slow.
+#### Note: Bugloos-Player is in a point that I am largely satisfied with. The app is still maintained, but feature additions will be slow.
 
 ## Screenshots
 
@@ -67,7 +67,7 @@ I primarily built Auxio for myself, but you can use it too, I guess.
 
 ## Contributing
 
-Auxio accepts most contributions as long as they follow the [Contribution Guidelines](/.github/CONTRIBUTING.md).
+Bugloos-Player accepts most contributions as long as they follow the [Contribution Guidelines](/.github/CONTRIBUTING.md).
 
 However, feature additions and major UI changes are less likely to be accepted. See [Accepted Additions](/info/ADDITIONS.md) for more information.
 
@@ -75,7 +75,7 @@ However, feature additions and major UI changes are less likely to be accepted. 
 
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Auxio is Free Software: You can use, study share and improve it at your
+Bugloos-Player is Free Software: You can use, study share and improve it at your
 will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or

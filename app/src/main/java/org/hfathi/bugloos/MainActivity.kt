@@ -18,7 +18,7 @@ import org.hfathi.bugloos.ui.isEdgeOn
 import org.hfathi.bugloos.ui.isNight
 
 /**
- * The single [AppCompatActivity] for Auxio.
+ * The single [AppCompatActivity] for Bugloos-Player.
  */
 class MainActivity : AppCompatActivity() {
     private val playbackModel: PlaybackViewModel by viewModels()

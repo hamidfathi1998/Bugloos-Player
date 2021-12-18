@@ -12,7 +12,7 @@ import org.hfathi.bugloos.R
 import org.hfathi.bugloos.ui.resolveAttr
 
 /**
- * A wrapper around [DialogFragment] that allows the usage of the standard Auxio lifecycle
+ * A wrapper around [DialogFragment] that allows the usage of the standard bugloos_player lifecycle
  * override [onCreateView] and [onDestroyView], but with a proper dialog being created.
  */
 abstract class LifecycleDialog : AppCompatDialogFragment() {

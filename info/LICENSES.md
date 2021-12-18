@@ -1,6 +1,6 @@
 # Licenses
 
-Auxio uses a number of third-party libraries, which are listed below with their licenses:
+bugloos_player uses a number of third-party libraries, which are listed below with their licenses:
 
 | Library Name | Author(s) | Purpose | License |
 |--------------|-----------|---------|---------|
