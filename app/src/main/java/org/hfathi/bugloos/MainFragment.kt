@@ -25,7 +25,7 @@ import org.hfathi.bugloos.ui.resolveAttr
 import org.hfathi.bugloos.ui.toColor
 
 /**
- * The primary "Home" [Fragment] for Auxio.
+ * The primary "Home" [Fragment] for Bugloos-Player.
  */
 class MainFragment : Fragment() {
     private val playbackModel: PlaybackViewModel by activityViewModels()

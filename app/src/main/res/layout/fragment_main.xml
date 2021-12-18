@@ -32,7 +32,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/compact_playback"
-                android:name="org.oxycblt.auxio.playback.CompactPlaybackFragment"
+                class ="org.hfathi.bugloos.playback.CompactPlaybackFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_compact_playback" />

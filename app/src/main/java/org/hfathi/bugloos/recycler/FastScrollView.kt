@@ -30,7 +30,7 @@ import kotlin.math.roundToInt
  * A view that allows for quick scrolling through a [RecyclerView] with many items. Unlike other
  * fast-scrollers, this one displays indicators and a thumb instead of simply a scroll bar.
  * This code is fundamentally an adaptation of Reddit's IndicatorFastScroll, albeit specialized
- * towards Auxio. The original library is here: https://github.com/reddit/IndicatorFastScroll/
+ * towards bugloos_player. The original library is here: https://github.com/reddit/IndicatorFastScroll/
  * @author hamid fathi
  */
 class FastScrollView @JvmOverloads constructor(

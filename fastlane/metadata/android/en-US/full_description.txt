@@ -1,4 +1,4 @@
-Auxio is a local music player with a fast, reliable UI/UX without the many useless features present in other music players. Built off of <a href="https://exoplayer.dev/">Exoplayer</a>, Auxio has a much better listening experience compared to other apps that use the native MediaPlayer API. In short, <b>It plays music.</b>
+bugloos_player is a local music player with a fast, reliable UI/UX without the many useless features present in other music players. Built off of <a href="https://exoplayer.dev/">Exoplayer</a>, bugloos_player has a much better listening experience compared to other apps that use the native MediaPlayer API. In short, <b>It plays music.</b>
 
 <b>Features</b>
 

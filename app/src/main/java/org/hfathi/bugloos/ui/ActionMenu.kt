@@ -28,7 +28,7 @@ fun Fragment.newMenu(anchor: View, data: BaseModel, flag: Int = ActionMenu.FLAG_
 }
 
 /**
- * A wrapper around [PopupMenu] that automates the menu creation for nearly every datatype in Auxio.
+ * A wrapper around [PopupMenu] that automates the menu creation for nearly every datatype in bugloos_player.
  * @param activity [AppCompatActivity] required as both a context and ViewModelStore owner.
  * @param anchor [View] This should be centered around
  * @param data [BaseModel] this menu corresponds to

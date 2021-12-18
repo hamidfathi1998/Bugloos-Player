@@ -316,7 +316,7 @@ class PlaybackService : Service(), Player.Listener, PlaybackStateManager.Callbac
      * Create the [SimpleExoPlayer] instance.
      */
     private fun newPlayer(): SimpleExoPlayer {
-        // Since Auxio is a music player, only specify an audio renderer to save
+        // Since bugloos_player is a music player, only specify an audio renderer to save
         // battery/apk size/cache size
         val audioRenderer = RenderersFactory { handler, _, audioListener, _, _ ->
             arrayOf(

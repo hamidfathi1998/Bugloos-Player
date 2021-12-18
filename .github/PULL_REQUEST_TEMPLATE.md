@@ -25,4 +25,4 @@ debug.zip
 
 **Due Diligence**
 
-- [ ] I have read the [Contribution Guidelines](https://github.com/OxygenCobalt/Auxio/blob/dev/.github/CONTRIBUTING.md) and [Accepted additions & Requests](https://github.com/OxygenCobalt/Auxio/blob/dev/info/ADDITIONS.md).
+- [ ] I have read the [Contribution Guidelines](https://github.com/hamidfathi1998/Bugloos-Player/blob/dev/.github/CONTRIBUTING.md) and [Accepted additions & Requests](https://github.com/hamidfathi1998/Bugloos-Player/blob/dev/info/ADDITIONS.md).

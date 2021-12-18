@@ -1,25 +1,16 @@
-# Auxio - Frequently Asked Questions
+# bugloos_player - Frequently Asked Questions
 
 For a list of **supported formats** read [Supported Formats](FORMATS.md)
 
-This FAQ will be continually updated as new changes and updates are made to Auxio.
+This FAQ will be continually updated as new changes and updates are made to bugloos_player.
 
-## What is Auxio?
+## What is bugloos_player?
 
-Auxio is local music player for android that I built for myself, primarily. Its designed to avoid a lot of the feature-bloat and frustrating UX that other FOSS music players have, while still remaining customizable to an extent.
-
-## Where can I download Auxio?
-
-Auxio is available on the [F-Droid](https://f-droid.org/en/packages/hfathi.auxio/) repository.
-
-## Can I translate Auxio to my native language?
-
-See the [Translations](https://github.com/OxygenCobalt/Auxio/issues/3) issue for guidance on how to create translations and submit them to the project. Any contributions are appreciated and
-tend to always be accepted.
+bugloos_player is local music player for android that I built for myself, primarily. Its designed to avoid a lot of the feature-bloat and frustrating UX that other FOSS music players have, while still remaining customizable to an extent.
 
 ## How can I contribute/report issues?
 
-Open an [Issue](https://github.com/OxygenCobalt/Auxio/issues) or a [Pull Request](https://github.com/OxygenCobalt/Auxio/pulls), please note the [Contribution Guidelines](../.github/CONTRIBUTING.md) and [Accepted Additions](ADDITIONS.md) however.
+Open an [Issue](https://github.com/hamidfathi1998/Bugloos-Player/issues) or a [Pull Request](https://github.com/hamidfathi1998/Bugloos-Player/pulls), please note the [Contribution Guidelines](../.github/CONTRIBUTING.md) and [Accepted Additions](ADDITIONS.md) however.
 
 ## Why ExoPlayer?
 
@@ -47,4 +38,4 @@ When a *phone* [Not a tablet] is in landscape, the insets meant to make the UI f
 
 ## Does this app keep/send any information about myself or my device?
 
-Auxio does not log any information about the device or its owner, and it has no internet access to send that information off in the first place.
+bugloos_player does not log any information about the device or its owner, and it has no internet access to send that information off in the first place.
